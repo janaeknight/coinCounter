@@ -1,0 +1,14 @@
+html {
+    background-color: #8BA8EE; font-family: Consolas, monaco, monospace;
+}
+
+.window {
+    width: 545px; height: 345px;
+    background-color: #F2F2F2;
+    border: 1px inset darkslategray; outline: 1px solid black;
+}
+.taskbar { 
+    width: inherit; height: 30px; border-bottom: 1.5px inset black;
+    font-size: 18px; background-color: #D1D1D1;
+}
+.taskbar span { margin: 0px 3px; }
