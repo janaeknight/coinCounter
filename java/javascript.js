@@ -10,6 +10,13 @@
 coinCounter();
 
 console.log(coinCounter); */
+// var x = document.getElementById("myText").value;
+
+
+
+
+
+
 
 
 // Total in Dollars, Total per currency, Total rolls per currency, any remainder per currency.
