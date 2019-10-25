@@ -18,7 +18,7 @@ console.log(coinCounter); */
 
 
 
-
+ 
 // Total in Dollars, Total per currency, Total rolls per currency, any remainder per currency.
 
 
@@ -41,7 +41,7 @@ console.log(coinCounter); */
     let penniesRollsRemainder = Math.floor(coins.pennies % 50);
     let nickelsRollsRemainder = Math.floor(coins.nickels % 40);
     let dimesRollsRemainder = Math.floor(coins.dimes % 50);
-    let quartersRollsRemainder = + Math.floor(coins.quarters % 40);
+    let quartersRollsRemainder = Math.floor(coins.quarters % 40);
 
 
 console.log("Amount in pennies: $" +penniesTotal,);
