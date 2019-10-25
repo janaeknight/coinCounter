@@ -31,6 +31,10 @@ console.log(coinCounter); */
     var nickelsRolls = Math.floor(coins.nickels / 40);
     var dimesRolls = Math.floor(coins.dimes / 50);
     var quartersRolls = Math.floor(coins.quarters / 40);
+    let penniesRollsRemainder = Math.floor(coins.pennies % 50);
+    let nickelsRollsRemainder = Math.floor(coins.nickels % 40);
+    let dimesRollsRemainder = Math.floor(coins.dimes % 50);
+    let quartersRollsRemainder = + Math.floor(coins.quarters % 40);
 
 
 console.log("Amount in pennies: $" +penniesTotal,);
@@ -39,30 +43,30 @@ console.log("Amount in dimes: $" +dimesTotal,);
 console.log("Amount in quarters: $" +quartersTotal,);
 console.log("Total amount in dollars: $" +totalDollarsFromCoins,);
     if (penniesRolls>1) {
-        console.log("There are " +penniesRolls, "rolls of pennies.");
+        console.log("There are " +penniesRolls, "rolls of pennies. There are " +penniesRollsRemainder, "leftover.");
     } else if (penniesRolls===1) {
-        console.log("There is " +penniesRolls, "roll of pennies."); 
+        console.log("There is " +penniesRolls, "roll of pennies. There are " +penniesRollsRemainder, "leftover."); 
     } else {
         console.log("There aren't enough pennies to make a roll. There are " +coins.pennies, "pennies.");
     }
     if (nickelsRolls>1) {
-        console.log("There are " +nickelsRolls, "rolls of nickels.");
+        console.log("There are " +nickelsRolls, "rolls of nickels. There are " +nickelsRollsRemainder, "leftover.");
     } else if (nickelsRolls===1) {
-        console.log("There is " +nickelsRolls, "roll of nickels."); 
+        console.log("There is " +nickelsRolls, "roll of nickels. There are " +nickelsRollsRemainder, "leftover."); 
     } else {
         console.log("There aren't enough nickels to make a roll. There are " +coins.nickels, "nickels.");
     }
     if (dimesRolls>1) {
-        console.log("There are " +dimesRolls, "rolls of dimes.");
+        console.log("There are " +dimesRolls, "rolls of dimes. There are " +dimesRollsRemainder, "leftover.");
     } else if (dimesRolls===1) {
-        console.log("There is " +dimesRolls, "roll of dimes."); 
+        console.log("There is " +dimesRolls, "roll of dimes. There are " +dimesRollsRemainder, "leftover."); 
     } else {
         console.log("There aren't enough dimes to make a roll. There are " +coins.dimes, "dimes.");
     }
     if (quartersRolls>1) {
-        console.log("There are " +quartersRolls, "rolls of quarters.");
+        console.log("There are " +quartersRolls, "rolls of quarters. There are " +quartersRollsRemainder, "leftover.");
     } else if (quartersRolls===1) {
-        console.log("There is " +quartersRolls, "roll of quarters."); 
+        console.log("There is " +quartersRolls, "roll of quarters. There are " +quartersRollsRemainder, "leftover."); 
     } else {
         console.log("There aren't enough quarters to make a roll. There are " +coins.quarters, "quarters.");
     }
