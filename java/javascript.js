@@ -83,7 +83,7 @@ console.log("Total amount in dollars: $" +totalDollarsFromCoins,);
 
 
 
-function heresAFunction(p, n, d, q) {
+function heresAFunction() {
     var moneyToCount = {
         p: 230,
         n: 1500,
