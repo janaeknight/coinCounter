@@ -77,3 +77,24 @@ console.log("Total amount in dollars: $" +totalDollarsFromCoins,);
     } else {
         console.log("There aren't enough quarters to make a roll. There are " +coins.quarters, "quarters.");
     }
+
+/*~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~*/
+
+
+
+
+function heresAFunction(p, n, d, q) {
+    var moneyToCount = {
+        p: 230,
+        n: 1500,
+        d: 275,
+        q: 833
+    }
+    var penniesHere = moneyToCount.p * .01;                  var dimesHere = moneyToCount.d * .10;
+    var nickelsHere = moneyToCount.n * .05;                  var quartersHere = moneyToCount.q * .25;
+    var totalMoneyCounted = penniesHere + nickelsHere + dimesHere + quartersHere;
+    console.log("You have $" +totalMoneyCounted,);
+    return totalMoneyCounted;
+}
+
+heresAFunction();
